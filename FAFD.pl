@@ -22,9 +22,11 @@ print "Furaffinity Favorites Downloader version $version\n"
     . "\t-h\t\t\tThis help screen.\n"
     . "\t-u\t<username>\tSpecify the user who's favorites to download.\n"
     . "\t-d\t<folder>\tWhere to download the files.\n\n"
-    . "\t-v\t\t\tMake downloads verbose.\n"
+    . "\t-v\t\t\tMake downloads verbose.\n\n"
     . "For example, to download the favorites of thingywhat we could:\n\n"
-    . "\t\t$0 -u thingywhat\n\n"
+    . "\t$0 -u thingywhat\n\n"
+    . "Or to specify a palce for them to be downloaded:\n\n"
+    . "\t$0 -u thingywhat -d ~/Downloads/FA\n\n"
     and exit if defined $args{h} or not defined $args{u};
 
 ## Settings according to parameters
