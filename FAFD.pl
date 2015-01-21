@@ -17,7 +17,7 @@ my $verbose = 0;
 my %args;
 getopts("u:d:hv", \%args);
 
-print "Furaffinity Favorites Downloader version $version\n"
+print "FurAffinity Favorites Downloader version $version\n"
     . "By thingywhat (https://github.com/thingywhat)\n\n"
     . "\t-h\t\t\tThis help screen.\n"
     . "\t-u <user> \t\tThe user to work with. (Required)\n"
