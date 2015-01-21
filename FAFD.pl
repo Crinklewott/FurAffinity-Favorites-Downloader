@@ -74,7 +74,7 @@ sub download($){
     if($verbose) {
 	print "Downloading $url to $folder/$filename!\n";
     } else {
-	print "Fething $filename\n";
+	print "Fetching $filename\n";
     }
     getstore("http://$url", "$folder/$filename");
 }
