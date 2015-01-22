@@ -56,7 +56,7 @@ That means you should have something like this:
 '/some/path/to/FAFD.pl' -u thingywhat
 #+END_EXAMPLE
 
-='/some/path/to/FAFD.pl'= will be different on your system.
+(=/some/path/to/FAFD.pl= will be different on your system.)
 
 Now, type another space after the username, type "=-d=" followed by another
 space, and then drag a folder from somewhere onto your command line.
@@ -67,7 +67,7 @@ The end result should look something like the following:
 #+END_EXAMPLE
 
 When you have a line that looks similar (Not the exact same, just with
-the same structure), hit [Enter] and watch the files download!
+the same structure), hit =[Enter]= and watch the files download!
 
 ** Slight description of the command line arguments
 There is only one required argument: the =-u= option, and that specifies the
