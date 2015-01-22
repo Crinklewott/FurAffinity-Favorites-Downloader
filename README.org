@@ -5,50 +5,86 @@ This Perl script is designed to make it easy-peasy to download both your own
 favorites, as well as the favorites of others.
 
 * Requirements
-Pretty much any version of modern Perl will work with this script. If 
-you are on Linux or Mac OSX, you usually already have a version of Perl 
+Pretty much any version of modern Perl will work with this script.
+
+If you are on Linux or Mac OSX, you likely already have a version of Perl 
 accessible to you and no installation is required on your part.
 
 However, if you are on Windows, you will need to download a version of 
-Perl for Windows. (I reccommend 
-[[http://www.activestate.com/activeperl/downloads][ActivePerl]].)
-
-When you install it, make sure that Perl is a part of your PATH.
+Perl for Windows. I personally reccommend 
+[[http://www.activestate.com/activeperl/downloads][ActivePerl]]. (When
+you install it, make sure that Perl is a part of your PATH, there should
+be an option in the installer.)
 
 * Usage
 You can run this program from most command lines by simply typing its 
 name when in the same folder as it (Or by specifying the place the 
 script is at.).
 
-- On Linux, you probably already know how to open the command line
+If that doesn't help any, allow me to go into much greater detail:
+
+** Starting the Perl Script For Dummies
+A part of my new book (I don't have a book.) details how to perform
+command line wizardry (Not really). It is truly a guide that will
+cover all possible bases ever. (Probably not)
+
+And without further ado... (Finally)
+
+*** Accessing the command line
+The first step is that you need to open a "command line", on Windows, this
+is called the "Command Prompt", and on both Mac OSX and Linux, it is known
+as the "Terminal".
+
+- On Linux, you probably already know how to open the command line, but if not,
+  try looking in the Applications menu for an item called "Terminal"
 - On Mac OSX, you can find your termial in Applications -> Utilities -> Terminal
 - On Windows, you can type [Windows Key] + [R], type "cmd" and hit [Enter]
 
-If you have literally no clue how to use this, the easiest way to 
-download to a folder on any system is to drag the script to the terminal 
-you have opened, add a space and "=-u=" followed by the user you want to 
-download the favorites of, followed by another space, and then a "=-d=", 
-then trag and drop the folder you want to download everything to onto 
-the terminal.
+*** Downloading using the script
+Assuming you know where you downloaded the Perl script, you can usually just
+drag and drop the script ("=FAFD.pl=", or just "=FAFD=" on systems that hide
+extensions.) directly onto your command line window.
+
+Some text should appear, this is "path" of the Perl script.
+
+Now you need to do a teensy bit of typing; add a space after the script and
+type a "=-u=" followed by another space, and then the username you want to
+download the favorites of.
+
+That means you should have something like this:
+#+BEGIN_EXAMPLE
+'/some/path/to/FAFD.pl' -u thingywhat
+#+END_EXAMPLE
+
+(='/some/path/to/FAFD.pl'= will be different on your system, don't worry.)
+
+Now, type another space after the username, type "=-d=" followed by another
+space, and then drag a folder from somewhere onto your command line.
 
 The end result should look something like the following:
 #+BEGIN_EXAMPLE
 '/some/path/to/FAFD.pl' -u thingywhat -d '/some/path/to/your/download/folder'
 #+END_EXAMPLE
 
-When you have a line that looks similar (Not the exact same, yout paths 
-will be different), hit [Enter] and watch the files download.
+When you have a line that looks similar (Not the exact same, just with
+the same structure), hit [Enter] and watch the files download!
 
-When you specify the "=-u=" option, all of the favorites of the user 
-mentioned will be downloaded into a new folder called "downloads" in the 
-current folder.
+** Slight description of the command line arguments
+There is only one required argument: the =-u= option, and that specifies the
+user you want to download... The downloads in this case will appear in a
+folder in the place you ran it from called "downloads". This folder is created
+if it doesn't exist already.
 
 Also if you wish to specify a place for these files to be downloaded, 
 you can specify so with the "=-d=" option.
 
-For a largely abridged version of this help, if you invoke the script on 
-its own, you'll see the following screen:
+If you specify the "=-v=" option, downloads will become more verbose, telling
+you exactly where the files are being downloaded from, and where they are
+being saved on your hard drive.
 
+You can also get help with the =-h= option (Or no options at all), which
+prints out some handy information. about the script... Pretty much just an
+abridged version of this README:
 #+BEGIN_EXAMPLE
 FurAffinity Favorites Downloader version 0.1
 By thingywhat (https://github.com/thingywhat)
@@ -67,3 +103,7 @@ Or to specify a palce for them to be downloaded:
 
 	./FAFD.pl -u thingywhat -d ~/Downloads/FA
 #+END_EXAMPLE
+
+Enjoy! And don't forget to submit an
+[[https://github.com/thingywhat/FurAffinity-Favorites-Downloader/issues][Issue]]
+if you find a bug with this script.
