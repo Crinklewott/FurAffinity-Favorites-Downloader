@@ -1,0 +1,27 @@
+#+OPTIONS: hidestars
+#+TITLE:FurAffinity Favorites downloader
+
+This Perl script is designed to make it easy-peasy to download both your own
+favorites, as well as the favorites of others.
+
+If you invoke the script on its own, you'll see the following screen:
+
+#+BEGIN_EXAMPLE
+FurAffinity Favorites Downloader version 0.1
+By thingywhat (https://github.com/thingywhat)
+
+	-h			This help screen.
+	-u <user> 		The user to work with. (Required)
+	-d [folder]		Where to download the files.
+
+	-v			Make downloads verbose.
+
+For example, to download the favorites of thingywhat we could:
+
+	./FAFD.pl -u thingywhat
+
+Or to specify a palce for them to be downloaded:
+
+	./FAFD.pl -u thingywhat -d ~/Downloads/FA
+#+END_EXAMPLE
+
