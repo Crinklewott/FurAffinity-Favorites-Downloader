@@ -90,8 +90,8 @@ FurAffinity Favorites Downloader version 0.1
 By thingywhat (https://github.com/thingywhat)
 
 	-h			This help screen.
-	-u <user> 		The user to work with. (Required)
-	-d [folder]		Where to download the files.
+	-u <user> 	The user to work with. (Required)
+	-d [folder]	Where to download the files.
 
 	-v			Make downloads verbose.
 
