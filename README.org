@@ -38,7 +38,7 @@ as the "Terminal".
 - On Linux, you probably already know how to open the command line, but if not,
   try looking in the Applications menu for an item called "Terminal"
 - On Mac OSX, you can find your termial in Applications -> Utilities -> Terminal
-- On Windows, you can type [Windows Key] + [R], type "cmd" and hit [Enter]
+- On Windows, you can type =[Windows Key] + [R]=, type "=cmd=" and hit =[Enter]=
 
 *** Downloading using the script
 Assuming you know where you downloaded the Perl script, you can usually just
@@ -56,7 +56,7 @@ That means you should have something like this:
 '/some/path/to/FAFD.pl' -u thingywhat
 #+END_EXAMPLE
 
-(='/some/path/to/FAFD.pl'= will be different on your system, don't worry.)
+='/some/path/to/FAFD.pl'= will be different on your system.
 
 Now, type another space after the username, type "=-d=" followed by another
 space, and then drag a folder from somewhere onto your command line.
