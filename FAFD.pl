@@ -42,20 +42,21 @@ mkdir($folder, 0755) unless(-d $folder);
 # this script is downloading for.
 sub getFavorites{
     my $page = 1;
-
-    my @favorites;
+    my %favorites;
 
     do {
-        my @currentPage = ();
+        my %currentPage;
+
         my $content = get("$favoriteUrl/$page");
 
         while ($content =~ /\/view\/(\d+)/g){
-            push(@currentPage, $1);
+            @currentPage{$1} = ();
         }
-        if(@currentPage){
-            push(@favorites, @currentPage);
+
+        if(keys(%currentPage)){
+            %favorites = {%favorites, %currentPage};
         } else {
-            return @favorites;
+            return keys(%favorites);
         }
     } while($page++);
 }
