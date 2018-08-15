@@ -47,10 +47,18 @@ sub getFavorites{
     do {
         my %currentPage;
 
+        if($verbose){
+            print "Grabbing page $page... ";
+        }
+
         my $content = get("$favoriteUrl/$page");
 
         while ($content =~ /\/view\/(\d+)/g){
             @currentPage{$1} = ();
+        }
+
+        if($verbose){
+            print "Found " . keys(%currentPage) . " favorites!\n";
         }
 
         if(keys(%currentPage)){
