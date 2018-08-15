@@ -43,16 +43,19 @@ mkdir($folder, 0755) unless(-d $folder);
 sub getFavorites{
     my $page = 1;
     my %favorites;
+    my $nextId;
 
     do {
         my %currentPage;
+        my $lastId = $nextId;
 
         if($verbose){
             print "Grabbing page $page... ";
         }
 
-        my $content = get("$favoriteUrl/$page");
+        my $content = get("$favoriteUrl/$nextId");
 
+        ($nextId) = $content =~ /\/favorites\/$user\/(\d+\/next)/;
         while ($content =~ /\/view\/(\d+)/g){
             @currentPage{$1} = ();
         }
@@ -61,9 +64,10 @@ sub getFavorites{
             print "Found " . keys(%currentPage) . " favorites!\n";
         }
 
-        if(keys(%currentPage)){
-            %favorites = {%favorites, %currentPage};
-        } else {
+        %favorites = (%favorites, %currentPage);
+
+        if(!$nextId){
+            print "Found " . keys(%favorites) . " favorites overall!\n";
             return keys(%favorites);
         }
     } while($page++);
