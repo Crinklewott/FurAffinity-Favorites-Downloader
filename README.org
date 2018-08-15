@@ -7,18 +7,18 @@ favorites, as well as the favorites of others.
 * Requirements
 Pretty much any version of modern Perl will work with this script.
 
-If you are on Linux or Mac OSX, you likely already have a version of Perl 
+If you are on Linux or Mac OSX, you likely already have a version of Perl
 accessible to you and no installation is required on your part.
 
-However, if you are on Windows, you will need to download a version of 
-Perl for Windows. I personally reccommend 
+However, if you are on Windows, you will need to download a version of
+Perl for Windows. I personally reccommend
 [[http://www.activestate.com/activeperl/downloads][ActivePerl]]. (When
 you install it, make sure that Perl is a part of your PATH, there should
 be an option in the installer.)
 
 * Usage
-You can run this program from most command lines by simply typing its 
-name when in the same folder as it (Or by specifying the place the 
+You can run this program from most command lines by simply typing its
+name when in the same folder as it (Or by specifying the place the
 script is at.).
 
 If that doesn't help any, allow me to go into much greater detail:
@@ -75,7 +75,7 @@ user you want to download... The downloads in this case will appear in a
 folder in the place you ran it from called "downloads". This folder is created
 if it doesn't exist already.
 
-Also if you wish to specify a place for these files to be downloaded, 
+Also if you wish to specify a place for these files to be downloaded,
 you can specify so with the "=-d=" option.
 
 If you specify the "=-v=" option, downloads will become more verbose, telling
@@ -86,13 +86,12 @@ You can also get help with the =-h= option (Or no options at all), which
 prints out some handy information. about the script... Pretty much just an
 abridged version of this README:
 #+BEGIN_EXAMPLE
-FurAffinity Favorites Downloader version 0.1
+FurAffinity Favorites Downloader version 0.1.1
 By thingywhat (https://github.com/thingywhat)
 
 	-h			This help screen.
 	-u <user> 	The user to work with. (Required)
 	-d [folder]	Where to download the files.
-
 	-v			Make downloads verbose.
 
 For example, to download the favorites of thingywhat we could:

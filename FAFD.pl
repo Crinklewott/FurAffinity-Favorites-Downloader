@@ -5,7 +5,7 @@ use Getopt::Std;
 
 ## Global truths
 my $pageUrl = "http://www.furaffinity.net/view/";
-my $version = "0.1";
+my $version = "0.1.1";
 
 ## Defaults
 # Default folder is "downloads" in the current folder.
