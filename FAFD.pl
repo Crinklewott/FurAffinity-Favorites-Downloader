@@ -47,7 +47,6 @@ sub getFavorites{
 
     do {
         my %currentPage;
-        my $lastId = $nextId;
 
         if($verbose){
             print "Grabbing page $page... ";
