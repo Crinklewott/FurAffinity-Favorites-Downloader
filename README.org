@@ -87,7 +87,7 @@ prints out some handy information. about the script... Pretty much just an
 abridged version of this README:
 #+BEGIN_EXAMPLE
 FurAffinity Favorites Downloader version 0.1.1
-By thingywhat (https://github.com/thingywhat)
+By CrinklyFriend (https://github.com/CrinklyFriend)
 
 	-h			This help screen.
 	-u <user> 	The user to work with. (Required)
@@ -104,5 +104,5 @@ Or to specify a palce for them to be downloaded:
 #+END_EXAMPLE
 
 Enjoy! And don't forget to submit an
-[[https://github.com/thingywhat/FurAffinity-Favorites-Downloader/issues][Issue]]
+[[https://github.com/CrinklyFriend/FurAffinity-Favorites-Downloader/issues][Issue]]
 if you find a bug with this script.
