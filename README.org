@@ -98,7 +98,7 @@ For example, to download the favorites of thingywhat we could:
 
 	./FAFD.pl -u thingywhat
 
-Or to specify a palce for them to be downloaded:
+Or to specify a place for them to be downloaded:
 
 	./FAFD.pl -u thingywhat -d ~/Downloads/FA
 #+END_EXAMPLE
