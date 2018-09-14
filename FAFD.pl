@@ -18,7 +18,7 @@ my %args;
 getopts("u:d:hv", \%args);
 
 print "FurAffinity Favorites Downloader version $version\n"
-    . "By thingywhat (https://github.com/thingywhat)\n\n"
+    . "By CrinklyFriend (https://github.com/CrinklyFriend)\n\n"
     . "\t-h\t\t\tThis help screen.\n"
     . "\t-u <user> \t\tThe user to work with. (Required)\n"
     . "\t-d [folder]\t\tWhere to download the files.\n"
